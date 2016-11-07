@@ -734,12 +734,12 @@ class Widget_Abstract_Contents extends Widget_Abstract
         if ($value['hidden']) {
             $value['text'] = '<form class="protected" action="' . $this->security->getTokenUrl($value['permalink'])
                 . '" method="post">' .
-            '<p class="word">' . _t('请输入密码访问') . '</p>' .
+            '<p class="word">' . _t('- 打赏5元 - 添加评论,填入邮箱,评论内容填入账号 - 后台确认后密码通过邮件发送,输入密码即可访问') . '</p>' .
             '<p><input type="password" class="text" name="protectPassword" />
             <input type="submit" class="submit" value="' . _t('提交') . '" /></p>' .
             '</form>';
 
-            $value['title'] = _t('此内容被密码保护');
+            /**  $value['title'] = _t('此内容被密码保护'); */
             $value['tags'] = array();
             $value['commentsNum'] = 0;
         }
