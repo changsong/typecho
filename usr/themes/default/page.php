@@ -8,6 +8,7 @@
             <?php $this->content(); ?>
         </div>
     </article>
+    <?php Views_Plugin::theViews(); ?>
     <?php $this->need('comments.php'); ?>
 </div><!-- end #main-->
 
